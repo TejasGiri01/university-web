@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="style12.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="reload">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"  onclick="hideMenu()" >Hide Menu</i>
+                <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()">Show Menu</i>
+        </nav>
+        <div-text class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world.You just need to learn HTML,CSS, <br>and Javascript you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us to know More</a>
+        </div-text>
+    </section>
+
+<!-----Course------>
+<section class ="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint non, eaque quam neque molestiae.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>ribus deleniti voluptatum consequatur corrupti sapiente voluptate. Ab eveniet recusandae veniam nulla porro quos nesciunt laudantium!
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur  facere quos repellat voluptatum? Est quas adipisci possimus nam beatae ducimus magni unde atque molestias,antium!
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias accusamus quis nesciunt vero expedita et! Dolore expeditaaudantium!
+        </p>
+    </div>
+    </div>
+</section>
+
+  <!----JavaScript for toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
